@@ -54,3 +54,5 @@ int main(){
         }
     }
 }
+/*i did this program based on the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988) 
+and based on the programs https://github.com/satuelisa/C/blob/main/nocomment.c" and  https://github.com/satuelisa/C/blob/main/spaces.c*/
