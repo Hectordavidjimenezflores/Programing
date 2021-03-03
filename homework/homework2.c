@@ -58,3 +58,5 @@ void prime(int k)
 
   }
 }
+/* I did this program with help of the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988), 
+https://github.com/satuelisa/C/tree/main/Ch2 and also with help of rulgamer03 */
