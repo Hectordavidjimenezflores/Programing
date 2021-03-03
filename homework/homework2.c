@@ -8,7 +8,6 @@ int main() {
   return 0;
 }
 
-
 void binary(int a)
 {
     int c=0;
@@ -21,15 +20,12 @@ void binary(int a)
 	++c;
     }
 
-
     for(int x=6;x>=0;--x)
     {
        printf("%01d",base[x]);
     }
      printf("\n");
 }
-
-
 
 void prime(int k)
 {
@@ -49,13 +45,10 @@ void prime(int k)
     }
 
     if(flag==0){
-
       binary(y);
       count++;
     }
-
     y++;
-
   }
 }
 /* I did this program with help of the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988), 
