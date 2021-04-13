@@ -13,7 +13,7 @@ int getop(char s[])
     i = 0;
     if(!isdigit(c) && c!='.' && c!='-'){
         if (!isalpha(c))
-        return c; /* no es un número ni letra*/
+        return c; 
         if (isalpha(c)){
         return tolower(c);
         }
