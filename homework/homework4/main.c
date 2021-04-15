@@ -26,29 +26,29 @@ int main()
     double abc[26]={0}; 
     int contador[26]={0}; 
      while ((type = getop(s)) != EOF) {
-        if (moverse==0) {
-        switch (tolower(type)) {
-            case NUMBER:
-            numero_encontrado = atof(s);
-            push(atof(s));
-            cantidad_de_numeros++;
-            break;
-            case '+':
-            push(pop() + pop());
-            break;
-            case '*':
-            push(pop() * pop());
-            break;
-            case '-':
-            op2 = pop();
-            push(pop() - op2);
-            break;
-            case '/':
-            op2 = pop();
-            if (op2 != 0.0)
-                push(pop() / op2);
-            else
-                printf("error: zero divisor\n");
+      if (moverse==0) {
+       switch (tolower(type)) {
+          case NUMBER:
+          numero_encontrado = atof(s);
+          push(atof(s));
+          cantidad_de_numeros++;
+          break;
+          case '+':
+          push(pop() + pop());
+          break;
+          case '*':
+          push(pop() * pop());
+          break;
+          case '-':
+          op2 = pop();
+          push(pop() - op2);
+          break;
+          case '/':
+          op2 = pop();
+          if (op2 != 0.0)
+              push(pop() / op2);
+          else
+              printf("error: zero divisor\n");
 
             break;
             case '\n':
@@ -136,8 +136,8 @@ int main()
             cantidad_de_errores++;
             printf("error: unknown command %s\n", s);
             }
-            break;
-        }
+          break;
+       }
 
      }
 
