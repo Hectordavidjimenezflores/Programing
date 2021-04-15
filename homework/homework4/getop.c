@@ -22,8 +22,8 @@ int getop(char s[])
 
     if(c=='-')
         if(isdigit(c=getch()) || c == '.')
-            s[++i]=c;
-        else
+           s[++i]=c;
+         else
         {
             if(c!=EOF)
                 ungetch(c);
@@ -31,16 +31,16 @@ int getop(char s[])
         }
 
     if(isdigit(c))
-        while(isdigit(s[++i] =c =getch()))
+       while(isdigit(s[++i] =c =getch()))
             ;
 
     if(c=='.')
-        while(isdigit(s[++i] = c=getch()))
+       while(isdigit(s[++i] = c=getch()))
             ;
 
     s[i] = '\0';
     if(c!=EOF)
-        ungetch(c);
+       ungetch(c);
     return NUMBER;
 }
 
