@@ -1,11 +1,11 @@
-#include <assert.h>  // assert
-#include <ctype.h>   // toupper
-#include <stdio.h>   // printf, scanf
-#include <stdlib.h>  // rand
-#include <unistd.h>  // getpid
+#include <assert.h>  /* assert */
+#include <ctype.h>   /* toupper */
+#include <stdio.h>   /* printf, scanf */
+#include <stdlib.h>  /* rand */
+#include <unistd.h>  /* getpid */
 
 
-#define ERROR_MINA_ENCONTRADA -1
+#define ERROR_MINA_ENCONTRADA 1
 #define ERROR_ESPACIO_YA_DESCUBIERTO 2
 #define ERROR_NINGUNO 3
 
@@ -16,7 +16,7 @@
 #define MINA '*'
 #define CANTIDAD_MINAS \
   15  
-#define DEBUG 0  // Si lo pones en 1, se van a desocultar las minas
+#define DEBUG 0  
 
 
 int obtenerMinasCercanas(int fila, int columna, char tablero[FILAS][COLUMNAS]) {
@@ -226,3 +226,5 @@ int main() {
   }
   return 0;
 }
+/* this program was made with the help of https://parzibyte.me/blog/2019/03/21/obtener-numeros-aleatorios-c/, https://www.tutorialspoint.com/c_standard_library/c_macro_assert.htm, 
+https://en.wikipedia.org/wiki/Unistd.h, the c-refcard, and Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988)
