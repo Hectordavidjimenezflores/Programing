@@ -12,7 +12,6 @@ void showcompletematrix(int** m, int dim)  {
     printf ("   %c", c);
   }
   printf("\n");
-  
   printf(" 1 ");
   for (i = 0; i < dim; i++) {
      
@@ -22,7 +21,6 @@ void showcompletematrix(int** m, int dim)  {
       printf(" %3d", m[i][j]);
       }
       else{
-        
         printf("    ");  
       }
       }
@@ -80,7 +78,6 @@ void showmatrixwhileplay(int** m, int dim, int** d){
    printf("\n");
 }
     
-
 int count(int** m, int tam, int a, int b){
     int i, j;
     int copy[tam][tam];
@@ -98,27 +95,25 @@ int count(int** m, int tam, int a, int b){
    }
   }
   return z;
-  
 }
 
-int discover(int** array, int** discovered, int tam, int found number, int letter)
+int discover(int** array, int** discovered, int tam, int foundnumber, int letter)
 {
-    if(array[found number-1][letter] == -1){
+    if(array[foundnumber-1][letter] == -1){
         return -1;
     }
-    else if(discovered[found number-1][letter] == 1){
+    else if(discovered[foundnumber-1][letter] == 1){
         return 0;
     }
     else{
         
-        if(array[found number-1][letter] == 0){
+        if(array[foundnumber-1][letter] == 0){
           
-            discovered[found number-1][letter] = 1;
+            discovered[foundnumber-1][letter] = 1;
             int result = 1;
 
-           
             {
-                int row = found number - 1;
+                int row = foundnumber - 1;
                 int column = letter - 1;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -128,9 +123,8 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
               }
             }
 
-           
             {
-                int row = found number;
+                int row = foundnumber;
                 int column = letter - 1;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -140,9 +134,8 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
               }
             }
 
-            
             {
-                int row = found number + 1;
+                int row = foundnumber + 1;
                 int column = letter - 1;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -152,9 +145,8 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
               }
             }
 
-            
             {
-                int row = found number + 1;
+                int row = foundnumber + 1;
                 int column = letter;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -164,9 +156,8 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
               }
             }
 
-            
             {
-                int row = found number + 1;
+                int row = foundnumber + 1;
                 int column = letter + 1;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -176,9 +167,19 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
               }
             }
 
+            {
+                int row = foundnumber;
+                int column = letter + 1;
+
+                if ((row - 1) >= 0 && (row - 1) < tam && 
+                    column >= 0 && column < tam
+                ){
+                    result += discover(array, discovered, tam, row, column);
+              }
+            }
             
             {
-                int row = found number;
+                int row = foundnumber - 1;
                 int column = letter + 1;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -188,21 +189,8 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
               }
             }
 
-            
             {
-                int row = found number - 1;
-                int column = letter + 1;
-
-                if ((row - 1) >= 0 && (row - 1) < tam && 
-                    column >= 0 && column < tam
-                ){
-                    result += discover(array, discovered, tam, row, column);
-              }
-            }
-
-            
-            {
-                int row = found number - 1;
+                int row = foundnumber - 1;
                 int column = letter;
 
                 if ((row - 1) >= 0 && (row - 1) < tam && 
@@ -211,12 +199,11 @@ int discover(int** array, int** discovered, int tam, int found number, int lette
                     result += discover(array, discovered, tam, row, column);
               }
             }
-
             return result;
         }
         else{
             
-         discovered[found number-1][letter] = 1;
+         discovered[foundnumber-1][letter] = 1;
           return 1;
     }
   }
