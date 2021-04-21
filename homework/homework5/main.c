@@ -10,7 +10,7 @@
 int main()
 {
   int mines=0; 
-  float upperlimitpercentage = .75; 
+  float upperlimitpercentage = .50; 
   int lowerlimit = 1;
   int play= TRUE; 
   int question=0; 
