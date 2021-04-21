@@ -83,9 +83,8 @@ int main()
                     errors++;
                     break;
                 
+                   }
                 }
-                }
-            
             }
         } 
         
@@ -113,7 +112,6 @@ int main()
                  }
             }
             
-            
             srand(time(NULL));
             for (int z=0;z<mines;z++){
                 int firstrandomnumber=rand()%(tam);
@@ -126,7 +124,6 @@ int main()
                 }
             }
             
-            
             for (i = 0; i < tam; i ++){
                  for (j=0; j<tam; j++){
                      if (matrix[i][j]==0){
@@ -134,10 +131,8 @@ int main()
                      }
                  }
             }
-            
-            
-            printf("\nPara escribir una coordenada escribe a2 o 2a (Cambia los numeros segun la cordenada que quieras\n");
-             
+           
+            printf("\nTo write a coordinate write a2 or 2a (Change the numbers according to the coordinate you want\n");
             
             int letter=0;
             int lettercounter=0;
@@ -160,7 +155,6 @@ int main()
                                 {
                                     int newhits = discover(matrix, discovered, tam, foundnumber, letter);
 
-                                    
                                     if(newhits == -1){
                                         showcompletematrix(matrix, tam);
                                         printf("\n\nPERDISTE!\n\n");
@@ -173,7 +167,7 @@ int main()
                                         question = 0;
                                     }
                                     else if(newhits == 0){
-                                        printf("\n\nYa habias seleccionado esta casilla!\n\n");
+                                        printf("\n\nYou have already selected this box!\n\n");
                                         showmatrixwhileplay(matrix, tam, discovered);
                                     }
                                     else {
@@ -218,7 +212,6 @@ int main()
                             errors++;
                          }
                         break;
-                    
                     }
                 }
             }
