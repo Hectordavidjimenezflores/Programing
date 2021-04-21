@@ -10,11 +10,11 @@
 int main()
 {
   int mines=0; 
-  float upper limit percentage = .75; 
-  int lower limit = 1;
+  float upperlimitpercentage = .75; 
+  int lowerlimit = 1;
   int play= TRUE; 
   int question=0; 
-  int found number; 
+  int foundnumber; 
   int tam; 
   int errors=0; 
   int type;
@@ -28,12 +28,12 @@ int main()
                 if (question==0){
                 switch (tolower(type)) {
                     case NUMBER:
-                    found number = atof(s);
+                    foundnumber = atof(s);
                     counter++;
                     break;
                     case '\n':
-                    if (errors==0&&found number>=2&&found number<=26&&counter==1){
-                        tam=found number;
+                    if (errors==0&&foundnumber>=2&&foundnumber<=26&&counter==1){
+                        tam=foundnumber;
                         printf("Ready, a new board will be generated %d x %d\n\n", tam, tam);
                         question=1;
                         counter=0;
@@ -56,18 +56,18 @@ int main()
         }
         
         if (question==1){
-            int upper limit = tam*tam*upper limit percentage;
-            printf("Number of mines, between %d and %d\nIf you write a decimal number it will be rounded\n", lower limit, upper limit);
+            int upperlimit = tam*tam*upperlimitpercentage;
+            printf("Number of mines, between %d and %d\nIf you write a decimal number it will be rounded\n", lowerlimit, upperlimit);
             while(question==1 && (type = getop(s)) != EOF) {
                 if (question==1){
                 switch (tolower(type)) {
                     case NUMBER:
-                    found number = atof(s);
+                    foundnumber = atof(s);
                     counter++;
                     break;
                     case '\n':
-                    if (errors==0&&found number>=lower limit&&found number<=upper limit&&counter==1){
-                        mines=found number;
+                    if (errors==0&&foundnumber>=lowerlimit&&foundnumber<=upperlimit&&counter==1){
+                        mines=foundnumber;
                         printf("Ready, the number of mines will be %d\n\n", mines);
                         question=2;
                         counter=0;
@@ -76,7 +76,7 @@ int main()
                     else {
                         errors=0;
                         counter=0;
-                        printf("\nNumber of mines, between %d and %d\nIf you write a decimal number it will be rounded\n", lower limit, upper limit);
+                        printf("\nNumber of mines, between %d and %d\nIf you write a decimal number it will be rounded\n", lowerlimit, upperlimit);
                     }
                     break;
                     default:
@@ -116,10 +116,10 @@ int main()
             
             srand(time(NULL));
             for (int z=0;z<mines;z++){
-                int first random number=rand()%(tam);
-                int second random number=rand()%(tam);
-                if (matrix[first random number][second random number]==0){
-                    matrix[first random number][second random number]=-1; 
+                int firstrandomnumber=rand()%(tam);
+                int secondrandomnumber=rand()%(tam);
+                if (matrix[firstrandomnumber][secondrandomnumber]==0){
+                    matrix[firstrandomnumber][secondrandomnumber]=-1; 
                 }
                 else{
                     z--;
@@ -140,7 +140,7 @@ int main()
              
             
             int letter=0;
-            int letter counter=0;
+            int lettercounter=0;
             int hits=0;
             int variable = tam*tam-mines;
             showmatrixwhileplay(matrix,tam, discovered); 
@@ -148,43 +148,43 @@ int main()
                 if(question==2){
                     switch (tolower(type)) {
                         case NUMBER:
-                        found number=atof(s);
+                        foundnumber=atof(s);
                         counter++;
                         break;
                         case '\n':
                         {
-                            if(errors == 0 && counter == 1 && letter counter == 1){
+                            if(errors == 0 && counter == 1 && lettercounter == 1){
                                 printf("\n\nEntrada valida\n\n");
-                                if(found number-1 < tam && found number - 1 >= 0 && 
+                                if(foundnumber-1 < tam && foundnumber - 1 >= 0 && 
                                     letter < tam && letter >= 0)
                                 {
-                                    int new hits = discover(matrix, discovered, tam, found number, letter);
+                                    int newhits = discover(matrix, discovered, tam, foundnumber, letter);
 
                                     
-                                    if(new hits == -1){
+                                    if(newhits == -1){
                                         showcompletematrix(matrix, tam);
                                         printf("\n\nPERDISTE!\n\n");
 
-                                        letter counter = 0;
+                                        lettercounter = 0;
                                         letter = 0;
-                                        found number = 0;
+                                        foundnumber = 0;
                                         counter = 0;
                                         errors = 0;
                                         question = 0;
                                     }
-                                    else if(new hits == 0){
+                                    else if(newhits == 0){
                                         printf("\n\nYa habias seleccionado esta casilla!\n\n");
                                         showmatrixwhileplay(matrix, tam, discovered);
                                     }
                                     else {
-                                        hits += new hits;
+                                        hits += newhits;
                                         if(hits >= tam * tam - mines){
                                             showcompletematrix(matrix, tam);
                                             printf("\n\nYOU WIN!\n\n");
 
-                                            letter counter = 0;
+                                            lettercounter = 0;
                                             letter = 0;
-                                            found number = 0;
+                                            foundnumber = 0;
                                             counter = 0;
                                             errors = 0;
                                             question = 0;
@@ -202,16 +202,16 @@ int main()
                                 printf("\n\nError 6: some invalid character\n\n");
                             }
 
-                            letter counter = 0;
+                            lettercounter = 0;
                             letter = 0;
-                            found number = 0;
+                            foundnumber = 0;
                             counter = 0;
                             errors = 0;
                         }break;
                         default:
                          if (type>=97&&type<=122){
                             letter=type-97;
-                            letter counter++;
+                            lettercounter++;
                          }
                          else {
                             printf("\n\nError 6: Check your input\n\n");
