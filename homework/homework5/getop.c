@@ -4,8 +4,8 @@
 
 int getop(char s[])
 {
-    int i,c;
-    char a;
+  int i,c;
+  char a;
 
     while((s[0] = c = getch()) == ' ' || c =='\t')
         ;
@@ -14,34 +14,30 @@ int getop(char s[])
     i = 0;
     if(!isdigit(c) && c!='.' && c!='-'){
         if (!isalpha(c))
-        return c; /* no es un número ni letra*/
+        return c; 
         if (isalpha(c)){
         return tolower(c);
         }
-       
-
     }
-
+    
     if(c=='-')
         if(isdigit(c=getch()) || c == '.')
-            s[++i]=c;
+          s[++i]=c;
         else
         {
             if(c!=EOF)
-                ungetch(c);
+             ungetch(c);
             return '-';
         }
 
     if(isdigit(c))
         while(isdigit(s[++i] =c =getch()))
             ;
-
     if(c=='.')
         while(isdigit(s[++i] = c=getch()))
             ;
-
     s[i] = '\0';
     if(c!=EOF)
-        ungetch(c);
+     ungetch(c);
     return NUMBER;
 }
