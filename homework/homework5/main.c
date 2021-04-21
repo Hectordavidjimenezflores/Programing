@@ -2,24 +2,24 @@
 #define TRUE 1 
 #define FALSE 0
 #include "calc.h"
-#include <stdlib.h> /* for atof() */
-#include <ctype.h> /* for tolower() */
-#include <time.h> /* time */
-#define MAXOP 100 /* max size of operand or operator */
+#include <stdlib.h> 
+#include <ctype.h> 
+#include <time.h> 
+#define MAXOP 100 
 
 int main()
 {
-  int mines=0; // Numero de bombas
-  float upper limit percentage = .75; // Para que no pueda poner el 100 % de bombas
+  int mines=0; 
+  float upper limit percentage = .75; 
   int lower limit = 1;
-  int play= TRUE; //Siempre sera TRUE
-  int question=0; //Si es 0 te pregunta el tamaño del tablero
-  int found number; //En casos que se ocupan numeros por ejemplo dar el tamaño del arreglo
-  int tam; //tamaño del tablero
-  int errors=0; // Checa que la entrada este bien
+  int play= TRUE; 
+  int question=0; 
+  int found number; 
+  int tam; 
+  int errors=0; 
   int type;
   char s[MAXOP];
-  int counter=0; // Checa que la entrada este bien
+  int counter=0; 
     
     while (play==TRUE){
         if (question==0){
@@ -225,17 +225,7 @@ int main()
             
             if (question==3){
                 play=FALSE;
-            }
-            
-             
-            
+            }  
         }
-     
-     
-     
-     
-     
-      
-    }
-    
+    } 
 }
