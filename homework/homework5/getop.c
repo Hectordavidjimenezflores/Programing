@@ -1,16 +1,12 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "calc.h"
-
 int getop(char s[])
 {
   int i,c;
   char a;
-
-    while((s[0] = c = getch()) == ' ' || c =='\t')
-        ;
+    while((s[0] = c = getch()) == ' ' || c =='\t');
     s[1] = '\0';
-
     i = 0;
     if(!isdigit(c) && c!='.' && c!='-'){
         if (!isalpha(c))
@@ -19,7 +15,6 @@ int getop(char s[])
         return tolower(c);
         }
     }
-    
     if(c=='-')
         if(isdigit(c=getch()) || c == '.')
           s[++i]=c;
@@ -29,13 +24,10 @@ int getop(char s[])
              ungetch(c);
             return '-';
         }
-
     if(isdigit(c))
-        while(isdigit(s[++i] =c =getch()))
-            ;
+        while(isdigit(s[++i] =c =getch()));
     if(c=='.')
-        while(isdigit(s[++i] = c=getch()))
-            ;
+        while(isdigit(s[++i] = c=getch()));
     s[i] = '\0';
     if(c!=EOF)
      ungetch(c);
