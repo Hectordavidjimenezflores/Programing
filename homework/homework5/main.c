@@ -149,7 +149,7 @@ int main()
                         case '\n':
                         {
                             if(errors == 0 && counter == 1 && lettercounter == 1){
-                                printf("\n\nEntrada valida\n\n");
+                                printf("\n\nValid input\n\n");
                                 if(foundnumber-1 < tam && foundnumber - 1 >= 0 && 
                                     letter < tam && letter >= 0)
                                 {
@@ -157,7 +157,7 @@ int main()
 
                                     if(newhits == -1){
                                         showcompletematrix(matrix, tam);
-                                        printf("\n\nPERDISTE!\n\n");
+                                        printf("\n\nYOU LOSE!\n\n");
 
                                         lettercounter = 0;
                                         letter = 0;
