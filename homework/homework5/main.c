@@ -28,7 +28,7 @@ int main()
     
     while (play==TRUE){
         if (question==0){
-            printf("Number of columns (will be the same number of rows) between 2 and 20\nIf you write a decimal number it will be rounded\n");
+            printf("Number of columns (that will be the same number of rows) between 2 and 20\nIf you write a decimal number it will be rounded\n");
             while(question==0 && (type = getop(s)) != EOF) {
                 if (question==0){
                 switch (tolower(type)) {
@@ -47,7 +47,7 @@ int main()
                     else {
                         errors=0;
                         counter=0;
-                        printf("\nNumber of columns (will be the same number of rows) between 2 and 20\nIf you write a decimal number it will be rounded\n");
+                        printf("\nNumber of columns (that will be the same number of rows) between 2 and 20\nIf you write a decimal number it will be rounded\n");
                     }
                     break;
                     default:
@@ -137,7 +137,7 @@ int main()
                  }
             }
            
-            printf("\nTo write a coordinate write a2 or 2a (Change the numbers according to the coordinate you want\n");
+            printf("\nTo write a coordinate write b5 or 5b (Change the numbers according to the coordinate you want\n");
             
             int letter=0;
             int lettercounter=0;
@@ -162,7 +162,7 @@ int main()
 
                                     if(newhits == -1){
                                         showcompletematrix(matrix, tam);
-                                        printf("\n\nYOU LOSE!\n\n");
+                                        printf("\n\nYOU LOSE!!! TRY AGAIN\n\n");
 
                                         lettercounter = 0;
                                         letter = 0;
@@ -172,14 +172,14 @@ int main()
                                         question = 0;
                                     }
                                     else if(newhits == 0){
-                                        printf("\n\nYou have already selected this box!\n\n");
+                                        printf("\n\nYou have already selected this box!!!\n\n");
                                         showmatrixwhileplay(matrix, tam, discovered);
                                     }
                                     else {
                                         hits += newhits;
                                         if(hits >= tam * tam - mines){
                                             showcompletematrix(matrix, tam);
-                                            printf("\n\nYOU WIN!\n\n");
+                                            printf("\n\nYOU WIN!!!!!\n\n");
 
                                             lettercounter = 0;
                                             letter = 0;
