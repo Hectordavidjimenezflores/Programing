@@ -33,3 +33,5 @@ int getop(char s[])
      ungetch(c);
     return NUMBER;
 }
+/* This program was made with the help of https://github.com/satuelisa/C/tree/main/Ch5, Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988),
+and with the help of rulgamer07 */
