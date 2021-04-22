@@ -23,7 +23,7 @@ int main()
     
     while (play==TRUE){
         if (question==0){
-            printf("Number of columns (will be the same number of rows) between 2 and 26\nIf you write a decimal number it will be rounded\n");
+            printf("Number of columns (will be the same number of rows) between 2 and 20\nIf you write a decimal number it will be rounded\n");
             while(question==0 && (type = getop(s)) != EOF) {
                 if (question==0){
                 switch (tolower(type)) {
@@ -42,7 +42,7 @@ int main()
                     else {
                         errors=0;
                         counter=0;
-                        printf("\nNumber of columns (will be the same number of rows) between 2 and 26\nIf you write a decimal number it will be rounded\n");
+                        printf("\nNumber of columns (will be the same number of rows) between 2 and 20\nIf you write a decimal number it will be rounded\n");
                     }
                     break;
                     default:
