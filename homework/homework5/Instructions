@@ -1,0 +1,4 @@
+To compile the code in the correct in gdb you may add first the main.c program, then you add the getch.c program,
+next you will add the getop.c program, then add the calc.h program and finally and the array.c program, when you did that 
+then you will be asked to write the number of rows and columns, then you will be asked to write the number of mines and at the end
+you can play the game by typing the coordinate that you want (a2, f5, c8, etc).
