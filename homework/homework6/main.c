@@ -210,3 +210,6 @@ void get (char l[MAX],char p[MAX],char u[MAX])
     p[c]='\0';
     int length2 = strlen(p);
 }
+
+/* This program was made with the help of https://github.com/satuelisa/C/tree/main/Ch6, Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988) and
+with the help of rulgamer07 */
