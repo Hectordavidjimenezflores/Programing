@@ -124,7 +124,7 @@ int main()
       delete(binarytree, u, p, &indicator);
       if (indicator==0)
       {
-          printf("No se elimino\n\n");
+          printf("The user wasn't removed plese check that the user name and/or the password are correct\n\n");
       }
 
       indicator=0;
