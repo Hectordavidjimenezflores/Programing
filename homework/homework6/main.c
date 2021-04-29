@@ -1,4 +1,5 @@
-/* First add the main.c program on the compiler, then add the binarytree.h program on the compiler and finally you can execute the programs*/
+/* First add the main.c program on the compiler, then add the binarytree.h program on the compiler and finally you can execute the programs
+(name the second program exactly as the name of the file "binarytree.h" because if you name it differently the program would not be executed) */
 
 #include <stdio.h>
 #include <string.h>
