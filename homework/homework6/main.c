@@ -1,3 +1,5 @@
+/* First add the main.c program on the compiler, then add the binarytree.h program on the compiler and finally you can execute the programs*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
