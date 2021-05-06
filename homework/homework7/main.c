@@ -12,6 +12,8 @@ En salidas.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
 En reporte.txt van 11 lineas (10 lineas que estan ocupadas y 1 en blanco)
 En horario.txt van 15 lineas (14 lineas que estan ocupadas y 1 en blanco)
 Al decir una en blanco se debe dar un enter para dejar un espacio vacio
+¡¡¡ADVERTENCIA!!!
+Para crear un usuario por favor no usar acentos ya que eso puede llegar a romper el programa
 */
 
 
@@ -350,3 +352,5 @@ void horario()
     fclose(leersistema);
     fclose(escribirhorario);
 }
+/* Este programa fue hecho con la ayuda de rulgamer07, Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988), 
+https://github.com/satuelisa/C/tree/main/Ch7, and the c-refcard */
