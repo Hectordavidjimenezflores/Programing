@@ -8,5 +8,5 @@ void registrar();
 void entradaosalida(int, int);
 void header();
 void horario();
-/* Este programa fue hecho con la ayuda de rulgamer07, Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988), 
+/* Este programa fue hecho con la ayuda de rulgamer07, Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988), and
 https://github.com/satuelisa/C/tree/main/Ch7 */
