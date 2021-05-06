@@ -56,7 +56,7 @@ int main()
         limite=count();
         printf("\nEn este momento hay %d trabajadores registrados\n", limite);
         printf("Este programa usa la funcion scanf, por favor cuide que su entrada sea correcta antes de dar enter\n");
-        printf("Bienvenido\nEscribe\n1 Para registrar una entrada\n2 Para registrar una salida\n3 Para registrar un trabajador\n4 Cerrar el programa\n");
+        printf("Bienvenido!!\nEscribe\n1 Para registrar una entrada\n2 Para registrar una salida\n3 Para registrar un trabajador\n4 Cerrar el programa\n");
         scanf("%d", &opcion);
         if (opcion==1)
         {
