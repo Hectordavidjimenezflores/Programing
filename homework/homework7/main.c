@@ -6,12 +6,12 @@ Este archivo va en el main.c, se crea el archivo registros.h usando Ctrl m
 y se pone lo que esta en el repositorio con ese nombre 
 Con ctrl m se crea sistema.txt // entradas.txt // salidas.txt // reporte.txt // horario.txt
 IMPORTANTE 
-En sistema.txt van 10 lineas (9 lineas que estan en mi repositorio y 1 en blanco)
-En entradas.txt van 12 lineas (11 lineas que estan en mi repositorio y 1 en blanco)
-En salidas.txt van 12 lineas (11 lineas que estan en mi repositorio y 1 en blanco)
-En reporte.txt van 16 lineas (15 lineas que estan en mi repositorio y 1 en blanco)
-En horario.txt van 27 lineas (26 lineas que estan en mi repositorio y 1 en blanco)
-Al decir una en blanco se debe dar un enter
+En sistema.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
+En entradas.txt van 6 lineas (5 lineas que ocupadas y 1 en blanco)
+En salidas.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
+En reporte.txt van 11 lineas (10 lineas que estan ocupadas y 1 en blanco)
+En horario.txt van 15 lineas (14 lineas que estan ocupadas y 1 en blanco)
+Al decir una en blanco se debe dar un enter para dejar un espacio vacio
 */
 
 
