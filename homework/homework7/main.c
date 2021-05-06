@@ -9,7 +9,10 @@ Primero si se desea agregar un usuario seguir las instrucciones que se indican e
 que se requieren (nombre, dias en los que se trabaja, hora a la que va a trabajar y el tiempo que va a trabajar en segundos) y el usuario se deberia de añadir en
 el archivo de sistema.txt junto con los dias que trabaja y los que no trabaja, la hora en la que trabaja y los segundos que va a trabajar 
 (ejemplo: Javier 1 0 1 1 0 1 0 12 43 17), para registrar una entrada solo tienes que teclear el pin del trabajador que va a entrar y se deberia de registrar en
-el archivo de entradas.txt
+el archivo de entradas.txt y para registrar una salida se realiza lo mismo que se realizo en la entrada solo que ahora se registrara en el archivo salidas.txt,
+para que estas cosas se puedan registrar se debe de teclear el numero 4 para terminar el programa (tienes que estar seguro de que llenastes todos los datos de registrar usuario,
+entradas y salidas antes de terminar el programa) una vez ya terminado todo se deberia de ver tambien que en el archivo de horarios.txt se debio de agregar el horario nuevo si es que
+registrastes a un nuevo usuario y en el archivo
 ¡¡IMPORTANTE!! 
 En sistema.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
 En entradas.txt van 6 lineas (5 lineas que ocupadas y 1 en blanco)
