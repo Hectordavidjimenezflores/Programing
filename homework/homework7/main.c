@@ -7,8 +7,9 @@ y se pone lo que esta en el repositorio con ese nombre
 Con ctrl m o dando click en el botón de crea un nuevo archivo se crea sistema.txt // entradas.txt // salidas.txt // reporte.txt // horario.txt
 Primero si se desea agregar un usuario seguir las instrucciones que se indican en el programa (teclear el numero 3 y dar enter) despues agregar los datos
 que se requieren (nombre, dias en los que se trabaja, hora a la que va a trabajar y el tiempo que va a trabajar en segundos) y el usuario se deberia de añadir en
-el archivo de sistema junto con los dias que trabaja y los que no trabaja, la hora en la que trabaja y los segundos que va a trabajar 
-(ejemplo: Javier 1 0 1 1 0 1 0 12 43 17)
+el archivo de sistema.txt junto con los dias que trabaja y los que no trabaja, la hora en la que trabaja y los segundos que va a trabajar 
+(ejemplo: Javier 1 0 1 1 0 1 0 12 43 17), para registrar una entrada solo tienes que teclear el pin del trabajador que va a entrar y se deberia de registrar en
+el archivo de entradas.txt
 ¡¡IMPORTANTE!! 
 En sistema.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
 En entradas.txt van 6 lineas (5 lineas que ocupadas y 1 en blanco)
