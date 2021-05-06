@@ -1,8 +1,8 @@
 #define MAX 20
 #define USUARIOS 27
-int* registrados = 0; //Variable global
-int** matrix; //matrix global
-int totaldesalidas=0; //Variable global
+int* registrados = 0; 
+int** matrix; 
+int totaldesalidas=0; 
 int count();
 void registrar();
 void entradaosalida(int, int);
