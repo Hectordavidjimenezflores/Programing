@@ -1,11 +1,11 @@
 /*
 Como compilar?
-TENER EN CUENTA QUE AL USAR GDB Y LA LIBRERIA TIME.h nos da un TIEMPO DIFERENTE al de MEXICO
+¡TENER EN CUENTA QUE AL USAR GDB Y LA LIBRERIA TIME.h nos da un TIEMPO DIFERENTE al de MEXICO!
 Se recomienda usar el compilador online gdb
-Este archivo va en el main.c, se crea el archivo registros.h usando Ctrl m 
+Este archivo va en el main.c, se crea el archivo registros.h usando Ctrl m o dando click en el botón de crear un nuevo archivo 
 y se pone lo que esta en el repositorio con ese nombre 
-Con ctrl m se crea sistema.txt // entradas.txt // salidas.txt // reporte.txt // horario.txt
-IMPORTANTE 
+Con ctrl m o dando click en el botón de crea un nuevo archivo se crea sistema.txt // entradas.txt // salidas.txt // reporte.txt // horario.txt
+¡¡IMPORTANTE!! 
 En sistema.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
 En entradas.txt van 6 lineas (5 lineas que ocupadas y 1 en blanco)
 En salidas.txt van 6 lineas (5 lineas que estan ocupadas y 1 en blanco)
@@ -27,72 +27,91 @@ int main()
     int j;
     int pintemporal;
     matrix = (int**)malloc(sizeof(int*) * USUARIOS);
-    for (i = 0; i < USUARIOS; i ++){
+    for (i = 0; i < USUARIOS; i ++)
+    {
             matrix[i] = (int*)malloc(sizeof(int) * 6);
-            for (j=0; j<6; j++){
+            for (j=0; j<6; j++)
+            {
             matrix[i][j]=-1;
             }
     }
     int salir=0;
     int opcion=0;
-    while(salir==0){
+    while(salir==0)
+    {
         int limite;
         limite=count();
         printf("\nEn este momento hay %d trabajadores registrados\n", limite);
         printf("Este programa usa la funcion scanf, por favor cuide que su entrada sea correcta antes de dar enter\n");
         printf("Bienvenido\nEscribe\n1 Para registrar una entrada\n2 Para registrar una salida\n3 Para registrar un trabajador\n4 Cerrar el programa\n");
         scanf("%d", &opcion);
-        if (opcion==1){//es entrada
+        if (opcion==1)
+        {
             
         printf("Cual es su pin?\n");
         scanf("%d", &pintemporal);
         
-        if (pintemporal<=0){
+        if (pintemporal<=0)
+        {
             printf("Entrada no valida\n");
         }
         
-            else if (pintemporal<=limite){
-                ///Si se puede registrar
-                if (matrix[pintemporal-1][1]==-1){ ///quiere decir que no ha entrado
-                    entradaosalida(pintemporal, 0);///estado es es 0 es entrada 1 salida
+            else if (pintemporal<=limite)
+            {
+                
+                if (matrix[pintemporal-1][1]==-1)
+                { 
+                    entradaosalida(pintemporal, 0);
                 }
-                else{
+                else
+                {
                     printf("Ya se tenia registrado una entrada de usted\n");
-                }
+              }
             }
-            else{
+            else
+            {
                 printf("En este momento hay %d trabajadores no puedes poner ese pin\n", limite);
-            }
+          }
         }
-        else if (opcion==2){
+        else if (opcion==2)
+        {
             
         printf("Cual es su pin?\n");
         scanf("%d", &pintemporal);
         
-        if (pintemporal<=0){
+        if (pintemporal<=0)
+        {
             printf("Entrada no valida\n");
         }
         
-            else if (pintemporal<=limite){
-                ///Si se puede registrar
-                if (matrix[pintemporal-1][1]!=-1){  //quiere decir que ya entro alguna vez
-                    entradaosalida(pintemporal, 1);///estado es es 0 es entrada 1 salida
+            else if (pintemporal<=limite)
+            {
+               
+                if (matrix[pintemporal-1][1]!=-1)
+                {  
+                    entradaosalida(pintemporal, 1);
                 }
-                else{
+                else
+                {
                     printf("Para registrar una salida debio registrarse una entrada\n");
-                }
+              }
             }
-            else{
+            else
+            {
                 printf("En este momento hay %d trabajadores no puedes poner ese pin\n", limite);
-            }
+          }
         }
-        else if (opcion==3){
+        else if (opcion==3)
+        {
             registrar();
         }
-        else if (opcion==4){
+        else if (opcion==4)
+        {
             int flag=0;
-            for (i=0; i<MAX; i++){
-                if(matrix[i][0]*matrix[i][1]*matrix[i][2]>0&&matrix[i][3]*matrix[i][4]*matrix[i][5]<0){
+            for (i=0; i<MAX; i++)
+            {
+                if(matrix[i][0]*matrix[i][1]*matrix[i][2]>0&&matrix[i][3]*matrix[i][4]*matrix[i][5]<0)
+                {
                     flag=-1; 
                     printf("Error: El usuario con el pin <%d> registro una entrada pero no una salida\n\n", i+1);
                 }
@@ -101,33 +120,31 @@ int main()
             horario();
             printf("Que tenga un buen dia\n");
             salir=1;
-            }
+          }
         }
-        else{
+        else
+        {
             printf("Opcion no disponible\n\n");
-        }
+      }
     }
-    //void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
-    //registrar();
-    //registrar();
-    //entradaosalida(2, 0);
-    //entradaosalida(2, 1);
+    
     return 0;
 }
 
-int count(){
+int count()
+{
     FILE* sistema = fopen("sistema.txt", "r");
     char c;
     int count=0;
-    while ((c = fgetc(sistema)) != EOF) {
+    while ((c = fgetc(sistema)) != EOF)
+    {
     if (c == '\n') {
-      count++; // chequemos cuantos estan registrados hasta el momento
-    }
+      count++; 
+     }
     }
     
     return count;
 }
-
 void registrar(){
     int pin;
     pin=count()+1;
@@ -147,20 +164,23 @@ void registrar(){
     printf("Cual sera el nombre del usuario?\n");
     scanf("%s", user);
     
-     do{
+     do
+     {
         printf("\nEscriba 0 (False) y 1 (True) los dias que el usuario trabajara\nUn ejemplo: 0 1 1 0 1 1 0\nMinimo debe haber un 1\n");
         printf("Asegurese de escribir 7 numeros\n");
         printf("Sun Mon Tue Wed Thu Fri Sat\n");
         scanf("%d %d %d %d %d %d %d", &domingo, &lunes, &martes, &miercoles, &jueves, &viernes, &sabado);
     } while(domingo+lunes+martes+miercoles+jueves+viernes+sabado==0||domingo!=0&&domingo!=1||lunes!=0&&lunes!=1||martes!=0&&martes!=1||miercoles!=0&&miercoles!=1||jueves!=0&&jueves!=1||viernes!=0&&viernes!=1||sabado!=0&&sabado!=1);
     
-    do {
+    do 
+    {
         printf("\nEscriba a que hora y minuto trabajara (separados con un espacio)\n");
         printf("Un ejemplo: 12 13\n");
         scanf("%d %d", &hora, &min);
     } while(hora<0||hora>23||min<0||min>60);
         
-    do {
+    do 
+    {
         printf("\nCuantos segundos trabajara (un numero entre 1 y 60)\n");
         scanf("%d", &trabajo);
     }while(trabajo<=0||trabajo>60);
@@ -170,9 +190,9 @@ void registrar(){
     fprintf(escribirsistema, "%d %s %d %d %d %d %d %d %d %d %d %d\n",pin, user, domingo, lunes,martes,miercoles,jueves,viernes,sabado, hora, min, trabajo);
     fclose(escribirsistema);
 }
-
-void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
-    int diferencia=0; ///El trabajador con el pin <X> trabajo diferencia segundos
+void entradaosalida(int pin, int estado)
+{
+    int diferencia=0; 
     time_t tiempoahora;
     time(&tiempoahora);
     struct tm *mitiempo = localtime(&tiempoahora);
@@ -183,7 +203,8 @@ void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
     int actualmes=mitiempo->tm_mon+1;
     int actualdia=mitiempo->tm_mday;
     int actualwdia=mitiempo->tm_wday;
-    if (estado==0){ //es una entrada
+    if (estado==0)
+    { 
     FILE* entrada = fopen("entradas.txt", "a");
     fprintf(entrada, "%d %d %d/%d/%d %d:%d:%d\n", pin, actualwdia, actualdia, actualmes, actualyear, actualhora, actualmin, actualsec);
     fclose(entrada);
@@ -192,7 +213,8 @@ void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
     matrix[pin-1][2]=actualsec;
     printf("Entrada registrada\n");
     }
-    if (estado==1){
+    if (estado==1)
+    {
     FILE* salida = fopen("salidas.txt", "a"); 
     fprintf(salida, "%d %d %d/%d/%d %d:%d:%d\n", pin, actualwdia, actualdia, actualmes, actualyear, actualhora, actualmin, actualsec);
     fclose(salida);
@@ -201,10 +223,12 @@ void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
     matrix[pin-1][4]=actualmin;
     matrix[pin-1][5]=actualsec;
     FILE* reporte = fopen("reporte.txt", "a");
-    if (totaldesalidas==0){
-        //se imprime un header en el reporte
+    if (totaldesalidas==0)
+    {
+     
         fprintf(reporte, "Reporte generado el "); 
-            switch(actualwdia){
+            switch(actualwdia)
+            {
                 case 0:
                 fprintf(reporte, "Domingo");
                 break;
@@ -228,12 +252,12 @@ void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
                 break;
             }
         fprintf(reporte, " %d/%d/%d\n", actualdia, actualmes, actualyear);
-    } ///Se impimio el header
+    } 
     
     diferencia=(matrix[pin-1][3]*3600+matrix[pin-1][4]*60+matrix[pin-1][5])-(matrix[pin-1][0]*3600+matrix[pin-1][1]*60+matrix[pin-1][2]);
     int horapin=matrix[pin-1][0];
     int minpin=matrix[pin-1][1];
-    int segundopin=matrix[pin-1][2];                                                                             //El trabajador con el pin <%d> entro a la hora: <%d:%d:%d> el dia: <%d/%d/%d> trabajo %d segundos
+    int segundopin=matrix[pin-1][2];                                                                             
     fprintf(reporte, "El trabajador con el pin <%d> entro a la hora: <%d:%d:%d> el dia: <%d/%d/%d> trabajo %d segundos\n", pin, horapin, minpin, segundopin, actualdia, actualmes, actualyear, diferencia);
     fclose(reporte);
     matrix[pin-1][0]=-1;
@@ -243,15 +267,17 @@ void entradaosalida(int pin, int estado){///estado es es 0 es entrada 1 salida
     matrix[pin-1][4]=-1;
     matrix[pin-1][5]=-1;
     
-    totaldesalidas=9; ///Cualquier numero diferente de 0 esta bien
-    }
+    totaldesalidas=9; 
+  }
 }
 
-void header(){
+void header()
+{
     time_t tiempoahora;
     time(&tiempoahora);
     struct tm *mitiempo = localtime(&tiempoahora);
-    switch(mitiempo->tm_wday){
+    switch(mitiempo->tm_wday)
+    {
         case 0:
         printf("Hoy es Domingo\n");
         break;
@@ -274,12 +300,13 @@ void header(){
         printf ("Hoy es Sabado\n");
         break;
     }
-    printf("Dia: %d/%d/%d\n", mitiempo->tm_mday, mitiempo->tm_mon+1, mitiempo->tm_year+1900); //tm year desde 1900 en mes 0 es enero)
+    printf("Dia: %d/%d/%d\n", mitiempo->tm_mday, mitiempo->tm_mon+1, mitiempo->tm_year+1900); 
     printf("Hora: %d:%d\n", mitiempo->tm_hour, mitiempo->tm_min);
     printf("El numero maximo de usuarios que pueden estar en el sistema son %d\n", USUARIOS);
 }
 
-void horario(){
+void horario()
+{
     time_t tiempoahora;
     time(&tiempoahora);
     int pinleido;
@@ -300,7 +327,8 @@ void horario(){
     FILE* escribirhorario = fopen("horario.txt", "w");
     char c;
     int count;
-    while (fscanf(leersistema, "%d %s %d %d %d %d %d %d %d %d %d %d\n", &pinleido, usuarioleido, &domingohorario, &luneshorario, &marteshorario, &miercoleshorario, &jueveshorario, &vierneshorario, &sabadohorario, &horaleida, &minutoleido, &trabajo) == 12) {
+    while (fscanf(leersistema, "%d %s %d %d %d %d %d %d %d %d %d %d\n", &pinleido, usuarioleido, &domingohorario, &luneshorario, &marteshorario, &miercoleshorario, &jueveshorario, &vierneshorario, &sabadohorario, &horaleida, &minutoleido, &trabajo) == 12)
+    {
     fprintf(escribirhorario, "El usuario <%s> con el pin <%d> debe entrar a las: %d:%d debe trabajar durante <%d segundos> los dias:\n", usuarioleido, pinleido,horaleida, minutoleido, trabajo);
     if (domingohorario==1)
     fprintf(escribirhorario, "domingo ");
@@ -319,8 +347,6 @@ void horario(){
     
     fprintf(escribirhorario, "\n\n");    
     }
-    
-    
     fclose(leersistema);
     fclose(escribirhorario);
 }
