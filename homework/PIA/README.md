@@ -7,4 +7,3 @@ This program was carried out with what was learned in the structured programming
 \
 1. [First video](https://www.youtube.com/watch?v=0ytH4s74Fj0)
 2. [Second video](https://www.youtube.com/watch?v=tiMwyicsPeI)
-\
