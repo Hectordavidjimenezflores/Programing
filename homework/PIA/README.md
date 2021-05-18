@@ -12,3 +12,5 @@ This program was carried out with what was learned in the structured programming
 
 I also used the following website:
 - [Third video](https://www.aprendeaprogramar.com/)
+
+And the c-refcard.pdf with which I rely to detect and write the correct syntax of the comands used in this program.
