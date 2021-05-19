@@ -19,7 +19,7 @@ The words to search are:
 4. diamante
 5. alejandrina
 
-Correct word +100 pts and incorrect word -100 pts. The player only has five chances to find the five words.
+Correct word +100 pts, incorrect word -100 pts and repeated word -100 pts. The player only has five chances to find the five words.
 
 ### Option 2
 
