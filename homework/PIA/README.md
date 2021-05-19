@@ -43,3 +43,5 @@ I also used the following website:
 - [Third video](https://www.aprendeaprogramar.com/)
 
 And the c-refcard.pdf with which I rely to detect and write the correct syntax of the comands used in this program.
+
+## Special thanks
