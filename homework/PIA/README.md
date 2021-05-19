@@ -45,3 +45,5 @@ I also used the following website:
 And the c-refcard.pdf with which I rely to detect and write the correct syntax of the comands used in this program.
 
 ## Special thanks
+
+I would like to thank my teacher Satu Elisa Schaeffer for teaching us many things about programming and also for the recommendation of the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988) and the c-refcard.
