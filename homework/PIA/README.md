@@ -7,6 +7,8 @@ For this project I am going to do a program in c language that generates a word 
 
 ### Option 1
 
+Type the number 1 and click enter to execute the option.
+
 In this option the player will start playing on the word search.
 
 The words to search are:
@@ -21,13 +23,19 @@ Correct word +100 pts and incorrect word -100 pts. The player only has five chan
 
 ### Option 2
 
+Type the number 2 and click enter to execute the option.
+
 In this option the instructions of the game are explained.
 
 ### Option 3
 
+Type the number 3 and click enter to execute the option.
+
 You are shown the score of the game you played.
 
 ### Option 4
+
+Type the number 4 and click enter to execute the option.
 
 This option is used to exit the game and close the program. Please choose option 4 before playing again to close the program and run it again.
 
