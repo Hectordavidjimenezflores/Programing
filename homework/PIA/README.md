@@ -47,3 +47,7 @@ And the c-refcard.pdf with which I rely to detect and write the correct syntax o
 ## Special thanks
 
 I would like to thank my teacher Satu Elisa Schaeffer for teaching me many things about programming and also for the recommendation of the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988) and the c-refcard.
+
+## Link to the demostration video
+
+- [Word search final project](https://www.youtube.com/watch?v=ncBUNdc0ab8)
