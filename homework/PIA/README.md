@@ -5,7 +5,7 @@ For this project I am going to do a program in c language that generates a words
 
 ### How to use the program
 
-Option 1
+#### Option 1
 
 In this option the player will start playing on the word search.
 
