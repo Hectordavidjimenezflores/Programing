@@ -9,6 +9,18 @@ For this project I am going to do a program in c language that generates a words
 
 In this option the player will start playing on the word search.
 
+The words to search are:
+
+1. rubi
+2. onyx
+3. opalo
+4. diamante
+5. alejandrina
+
+Correct word +100 and incorrect word -100 pts. The player only has five chances to find the five words.
+
+#### Option 2
+
 This program was carried out with what was learned in the structured programming class, in addition I used the following videos as a support to give me an idea of how to structured the mentioned program:
 
 - [First video](https://www.youtube.com/watch?v=0ytH4s74Fj0)
