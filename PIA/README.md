@@ -69,4 +69,4 @@ I would like to thank my teacher Satu Elisa Schaeffer for teaching me many thing
 4. Storage: 2 (Satisfactorily fulfills the functionality of the program).
 5. Documentation: 2 (The document looks very good to me and the video is simple, but it fulfills the objective).
 
-Final score: 12 out of 15.
+Final grade: 12 out of 15.
