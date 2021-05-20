@@ -148,6 +148,7 @@ do
         printf("\n\t 1.- rubi\n\t 2.- onyx\n\t 3.- opalo\n\t 4.- diamante\n\t 5.- alejandrina");
         printf("\n\t Palabra correcta +100 pts");
         printf("\n\t Palabra incorrecta -100 pts");
+        printf("\n\t Palabra repetida -100 pts");
         printf("\n\t El jugador solo tiene 5 oportunidades para encontrar las 5 palabras");
         printf("\n\t");
         printf("\n\t Opcion 2");
@@ -188,12 +189,8 @@ while (opc!=4);
 
 /* This program was carried out with what was learned in the structured programming class, in addition I used
 the following videos as a support to give me an idea of how to structured the mentioned program:
-
 https://www.youtube.com/watch?v=0ytH4s74Fj0
 https://www.youtube.com/watch?v=tiMwyicsPeI
-
 I also used the following website: 
-
 https://www.aprendeaprogramar.com/
-
 And the c-refcard.pdf with which I rely to detect and write the correct syntax of the comands used in this program. */
