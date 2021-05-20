@@ -66,7 +66,7 @@ I would like to thank my teacher Satu Elisa Schaeffer for teaching me many thing
 1. Complexity: 2 (It is not very complicated, but it is not the simplest either).
 2. Functionality: 3 (It works correctly following the instructions).
 3. Code: 3 (It is clear and clean).
-4. Storage: 2 (Satisfactorily fulfills the functionality of the program).
+4. Storage: 2 (Satisfactorily fulfills the functionality of the program and it prevents having extra information in the screen).
 5. Documentation: 2 (The document looks very good to me and the video is simple, but it fulfills the objective).
 
 Final grade: 12/15.
