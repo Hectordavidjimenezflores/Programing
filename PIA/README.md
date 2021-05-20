@@ -44,7 +44,7 @@ Type the number 4 and click enter to execute the option.
 
 This option is used to exit the game and close the program. Please choose option 4 before playing again to close the program and run it again.
 
-## References
+## Bibliography
 
 This program was carried out with what was learned in the structured programming class, in addition I used the following videos as a support to give me an idea of how to structured the mentioned program:
 
