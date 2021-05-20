@@ -60,3 +60,14 @@ And the c-refcard.pdf with which I rely to detect and write the correct syntax o
 ## Special thanks
 
 I would like to thank my teacher Satu Elisa Schaeffer for teaching me many things about programming and also for the recommendation of the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988) and the c-refcard.
+
+## Self-evaluation
+
+1. Complexity: 2 (It is not very complicated, but it is not the simplest either).
+2. Functionality: 3 (It works correctly following the instructions).
+3. Code: 3 (It is clear and clean).
+4. Storage: 2 (Satisfactorily fulfills the functionality of the program).
+5. Documentation: 2 (The document looks very good to me and the video is simple, but it fulfills the objective).
+
+FS: 12 out of 15
+
