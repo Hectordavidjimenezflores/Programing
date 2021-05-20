@@ -20,14 +20,14 @@ int main()
         }
     }
 
-//palabras para buscar
+/* Palabras para buscar */
 matriz[1][0]='r',matriz[1][1]='u',matriz[1][2]='b',matriz[1][3]='i';
 matriz[2][10]='o',matriz[2][11]='n',matriz[2][12]='y',matriz[2][13]='x';
 matriz[4][5]='o',matriz[4][6]='p',matriz[4][7]='a',matriz[4][8]='l',matriz[4][9]='o';
 matriz[8][8]='d',matriz[8][9]='i',matriz[8][10]='a',matriz[8][11]='m',matriz[8][12]='a',matriz[8][13]='n',matriz[8][14]='t',matriz[8][15]='e';
 matriz[9][3]='a',matriz[9][4]='l',matriz[9][5]='e',matriz[9][6]='j',matriz[9][7]='a',matriz[9][8]='n',matriz[9][9]='d',matriz[9][10]='r',matriz[9][11]='i',matriz[9][12]='n',matriz[9][13]='a';
 
-//Hacer Menu
+/* Hacer Menu */
 do
 {
    system("clear");
@@ -56,11 +56,11 @@ do
         printf("\n");
         printf("Escribe la palabra encontrada :  ");
         scanf("%s", pal1);
-//Hacer que la palabra este en letras minusculas
+/* Hacer que la palabra este en letras minusculas */
         for(h=0,h<strlen(pal1);h++;){
             pal1[h]=tolower(pal1[h]);
         }
-        
+        /* Palabras correctas */
             if(strcmp(pal1,"rubi") == 0 && (piedra1 == 0)){
                 printf("\n\t Felicidades ya encontraste una piedra");
                 printf("\n\t Ganaste 100 puntos");
@@ -120,7 +120,7 @@ do
                 getchar();
                 getchar();
                 system("clear");
-            } else
+            } else   /* Palabras incorrectas */
             if((pal1 != "rubi") || (pal1 != "opalo") || (pal1 != "onyx") || (pal1 != "diamante") || (pal1 != "alejandrina")){
             printf("\n\t Fallaste, vuelve a intentarlo");
             puntaje=puntaje-100;
@@ -131,7 +131,7 @@ do
             getchar();
             system("clear");
             }
-    } while (conteo>0);
+    } while (conteo>0); /* Oportunidades agotadas */
         printf("\n\t Se agotaron tus 5 oportunidades...Fin del juego");
         printf("\n\t Enter para continuar...");
         getchar();
@@ -139,7 +139,7 @@ do
         system("clear");
         break;
     case 2:
-        system("clear");
+        system("clear"); /* Instrucciones */
         printf("\n\t INSTRUCCIONES  ");
         printf("\n\t");
         printf("\n\t Opcion 1");
@@ -167,14 +167,14 @@ do
         getchar();
         break;
     case 3:
-        system("clear");
+        system("clear"); /* Puntaje total de la partida jugada */
         printf("\n\t Puntaje : %d", puntaje);
         printf("\n\t Enter para continuar...");
         getchar();
         getchar();
         break;
     case 4:
-        printf("\n\t Adios.....<Enter> para terminar");
+        printf("\n\t Adios.....<Enter> para terminar"); /* Salir del juego */
         getchar();
         getchar();
         break;
