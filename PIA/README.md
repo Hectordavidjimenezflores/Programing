@@ -1,4 +1,9 @@
 # Final Project Report
+
+## Link to the demostration video
+
+- [Word search final project](https://www.youtube.com/watch?v=ncBUNdc0ab8)
+- 
 ## Word search
 
 For this project I am going to do a program in c language that generates a word search game that creates an puzzle of letters with different hidden words and the player need to find them, in this game of word search the topic is precious gems and you only have five opportunities to complete the game, for every word you miss you will lose an opportunity to complete the game and also you will lose 100 points in the score and if the player writes a word that he/she already found the player would also lose 100 points, for every word that the player finds he/she will still lose an opportunity but the player will gain 100 points in the score, the mission is to score 500 points or find five words. There is a menu of options, one option asks the player if he/she wants to play the game, the second option tells the player the instructions of the game, the third option is the score, and finally the fourth option closes the game. Inside the program I use a two-dimension array to make the word search, I used the “tolower” command so every word that the player inputs will be in lower case, this is to prevent errors from words written in upper case. Finally the player needs to exit the game (select the option 4) to close the program and run it again if the player wants to play again.
@@ -55,7 +60,3 @@ And the c-refcard.pdf with which I rely to detect and write the correct syntax o
 ## Special thanks
 
 I would like to thank my teacher Satu Elisa Schaeffer for teaching me many things about programming and also for the recommendation of the book Brian W. Kernighan, Dennis M. Ritchie - The C Programming Language, Second Edition (1988) and the c-refcard.
-
-## Link to the demostration video
-
-- [Word search final project](https://www.youtube.com/watch?v=ncBUNdc0ab8)
